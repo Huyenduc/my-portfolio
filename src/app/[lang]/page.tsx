@@ -25,21 +25,42 @@ export async function generateMetadata({
     ? lang
     : routing.defaultLocale;
   const t = await getTranslations({ locale, namespace: "meta" });
+  const title = t("title");
+  const description = t("description");
+  const siteName = t("siteName");
+  const pageUrl = `https://www.aboutmedev.online/${locale}`;
 
   return {
-    title: t("title"),
-    description: t("description"),
+    title,
+    description,
     alternates: {
+      canonical: pageUrl,
       languages: {
         vi: "/vn",
         en: "/en",
       },
     },
     openGraph: {
-      title: t("title"),
-      description: t("description"),
+      title,
+      description,
+      url: pageUrl,
+      siteName,
       type: "website",
       locale: locale === "vn" ? "vi_VN" : "en_US",
+      images: [
+        {
+          url: "/og-image.png",
+          width: 1200,
+          height: 630,
+          alt: title,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: ["/og-image.png"],
     },
   };
 }

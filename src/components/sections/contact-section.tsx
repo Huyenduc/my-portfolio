@@ -1,12 +1,23 @@
 "use client";
 
-import { Check, Copy, Mail, MapPin, Phone } from "lucide-react";
+import {
+  AlertCircle,
+  Check,
+  CheckCircle2,
+  Copy,
+  Loader2,
+  Mail,
+  MapPin,
+  Phone,
+} from "lucide-react";
 import { useTranslations } from "next-intl";
 import { useCallback, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { GithubIcon } from "@/components/ui/icons";
 import { Reveal } from "@/components/ui/reveal";
 import { Container, Section } from "@/components/ui/section";
+
+type SubmitStatus = "idle" | "submitting" | "success" | "error";
 
 export function ContactSection() {
   const t = useTranslations("contactSection");
@@ -16,6 +27,7 @@ export function ContactSection() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [status, setStatus] = useState<SubmitStatus>("idle");
 
   const handleCopy = useCallback(
     async (text: string, field: "email" | "phone") => {
@@ -39,17 +51,32 @@ export function ContactSection() {
   }, [handleCopy]);
 
   const handleSubmit = useCallback(
-    (e: React.FormEvent) => {
+    async (e: React.FormEvent) => {
       e.preventDefault();
-      const subject = encodeURIComponent(
-        `Portfolio Contact from ${name || "Recruiter"}`,
-      );
-      const body = encodeURIComponent(
-        `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`,
-      );
-      window.location.href = `mailto:huyenduc0601@gmail.com?subject=${subject}&body=${body}`;
+      if (status === "submitting") return;
+
+      setStatus("submitting");
+      try {
+        const res = await fetch("/api/contact", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ name, email, message }),
+        });
+
+        if (!res.ok) {
+          throw new Error("Request failed");
+        }
+
+        setStatus("success");
+        setName("");
+        setEmail("");
+        setMessage("");
+        setTimeout(() => setStatus("idle"), 5000);
+      } catch {
+        setStatus("error");
+      }
     },
-    [name, email, message],
+    [name, email, message, status],
   );
 
   return (
@@ -199,14 +226,36 @@ export function ContactSection() {
                   />
                 </div>
 
+                {status === "success" && (
+                  <div className="flex items-center gap-2.5 rounded-lg border border-emerald-500/30 bg-emerald-500/10 px-4 py-3 text-xs sm:text-sm text-emerald-400">
+                    <CheckCircle2 className="size-4 shrink-0" />
+                    <span>{t("successMessage")}</span>
+                  </div>
+                )}
+
+                {status === "error" && (
+                  <div className="flex items-center gap-2.5 rounded-lg border border-destructive/30 bg-destructive/10 px-4 py-3 text-xs sm:text-sm text-destructive">
+                    <AlertCircle className="size-4 shrink-0" />
+                    <span>{t("errorMessage")}</span>
+                  </div>
+                )}
+
                 <div className="pt-2 flex justify-center lg:justify-start">
                   <Button
                     type="submit"
                     variant="default"
                     size="lg"
+                    disabled={status === "submitting"}
                     className="transition-transform duration-300 hover:-translate-y-1"
                   >
-                    {t("submitBtn")}
+                    {status === "submitting" ? (
+                      <>
+                        <Loader2 className="size-4 animate-spin" />
+                        <span>{t("submittingBtn")}</span>
+                      </>
+                    ) : (
+                      <span>{t("submitBtn")}</span>
+                    )}
                   </Button>
                 </div>
               </form>

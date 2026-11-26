@@ -1,5 +1,6 @@
 {
   "meta": {
+    "siteName": "Phạm Huyền Đức • Portfolio",
     "title": "Phạm Huyền Đức | Fullstack Web & Mobile Developer",
     "description": "Portfolio của Phạm Huyền Đức — Fullstack Developer với hơn 3 năm kinh nghiệm phát triển ứng dụng Web (React, Next.js) & Mobile (React Native, Expo) cùng hệ thống Backend (Node.js, NestJS, PostgreSQL)."
   },
@@ -419,6 +420,9 @@
     "formMessageLabel": "Lời nhắn",
     "formMessagePlaceholder": "Nội dung trao đổi...",
     "submitBtn": "Gửi liên hệ",
+    "submittingBtn": "Đang gửi...",
+    "successMessage": "Đã gửi tin nhắn thành công! Tôi sẽ phản hồi bạn sớm nhất.",
+    "errorMessage": "Không thể gửi tin nhắn lúc này. Vui lòng thử lại hoặc gửi trực tiếp qua huyenduc0601@gmail.com.",
     "copyBtn": "Sao chép",
     "copiedBtn": "Đã chép!",
     "location": "Vinh, Nghệ An",

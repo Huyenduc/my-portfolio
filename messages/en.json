@@ -1,5 +1,6 @@
 {
   "meta": {
+    "siteName": "Pham Huyen Duc • Portfolio",
     "title": "Pham Huyen Duc | Fullstack Web & Mobile Developer",
     "description": "Portfolio of Pham Huyen Duc — Fullstack Developer with 3+ years of experience building Web (React, Next.js) & Mobile (React Native, Expo) applications and scalable Backends (Node.js, NestJS, PostgreSQL)."
   },
@@ -419,6 +420,9 @@
     "formMessageLabel": "Message",
     "formMessagePlaceholder": "Tell me about your project or role...",
     "submitBtn": "Submit",
+    "submittingBtn": "Sending...",
+    "successMessage": "Message sent successfully! I will get back to you soon.",
+    "errorMessage": "Could not send message right now. Please try again or email huyenduc0601@gmail.com directly.",
     "copyBtn": "Copy",
     "copiedBtn": "Copied!",
     "location": "Vinh, Nghe An",

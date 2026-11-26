@@ -2,6 +2,13 @@ import { notFound } from "next/navigation";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { Suspense } from "react";
 import { routing } from "@/i18n/routing";
+import enMessages from "../../../messages/en.json";
+import vnMessages from "../../../messages/vn.json";
+
+const messagesMap = {
+  vn: vnMessages,
+  en: enMessages,
+} as const;
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ lang: locale }));
@@ -20,7 +27,7 @@ async function LocaleProvider({
     notFound();
   }
 
-  const messages = (await import(`../../../messages/${lang}.json`)).default;
+  const messages = messagesMap[lang];
 
   return (
     <NextIntlClientProvider locale={lang} messages={messages}>

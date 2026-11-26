@@ -120,7 +120,7 @@ export function HeroSection() {
                 {/* Transparent cutout portrait popping out of the ring */}
                 <div className="pointer-events-none absolute bottom-0 h-80 w-72 sm:h-96 sm:w-88 overflow-hidden rounded-b-full">
                   <Image
-                    src="/huyen-duc-avatar.png"
+                    src="/avatar.webp"
                     alt={t("name")}
                     fill
                     sizes="360px"

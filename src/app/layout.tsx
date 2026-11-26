@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
 import "./globals.css";
@@ -13,7 +13,12 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+export const viewport: Viewport = {
+  themeColor: "#FF715B",
+};
+
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.aboutmedev.online"),
   title: "Phạm Huyền Đức | Fullstack Web & Mobile Developer",
   description:
     "Fullstack Developer with 3+ years of experience building Web (React, Next.js) & Mobile (React Native, Expo) applications.",
