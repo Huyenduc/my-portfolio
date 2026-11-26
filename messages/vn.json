@@ -1,0 +1,428 @@
+{
+  "meta": {
+    "title": "Phạm Huyền Đức | Fullstack Web & Mobile Developer",
+    "description": "Portfolio của Phạm Huyền Đức — Fullstack Developer với hơn 3 năm kinh nghiệm phát triển ứng dụng Web (React, Next.js) & Mobile (React Native, Expo) cùng hệ thống Backend (Node.js, NestJS, PostgreSQL)."
+  },
+  "nav": {
+    "name": "Phạm Huyền Đức",
+    "home": "Trang chủ",
+    "about": "Giới thiệu",
+    "skills": "Kỹ năng",
+    "projects": "Dự án",
+    "experience": "Kinh nghiệm",
+    "contact": "Liên hệ",
+    "downloadCv": "Tải CV",
+    "themeLabel": "Giao diện"
+  },
+  "hero": {
+    "availability": "Sẵn sàng nhận cơ hội mới • Fullstack (Web & Mobile)",
+    "hello": "Xin chào",
+    "imName": "Tôi là Huyền Đức",
+    "name": "Phạm Huyền Đức",
+    "role": "Fullstack Web & Mobile Developer",
+    "objective": "Lập trình viên Fullstack với hơn 3 năm kinh nghiệm xây dựng ứng dụng Web và Mobile thực chiến. Có khả năng phát triển sản phẩm trọn gói từ ý tưởng đến khi vận hành thực tế (Production), bao gồm Frontend, Mobile App, Backend và tích hợp hệ thống. Phối hợp tốt trong môi trường đội nhóm, trực tiếp làm việc với khách hàng Nhật Bản và luôn chủ động làm chủ công nghệ mới.",
+    "gotProjectCta": "Bạn có dự án?",
+    "myResumeCta": "CV của tôi",
+    "location": "Vinh, Nghệ An, Việt Nam",
+    "dob": "06/01/2000"
+  },
+  "skillsSection": {
+    "eyebrow": "Năng Lực Kỹ Thuật",
+    "aboutHeading": "Về bản thân tôi",
+    "title": "Hệ Sinh Thái Công Nghệ Toàn Diện",
+    "description": "Làm chủ quy trình phát triển End-to-End từ giao diện Web/Mobile hiện đại, kiến trúc Backend mở rộng đến triển khai Cloud và ứng dụng AI tăng tốc độ phát triển.",
+    "services": [
+      {
+        "id": "web",
+        "title": "Phát triển Website (React / Next.js)",
+        "subtitle": "React.js, Next.js, TypeScript, Tailwind CSS, Shopify Liquid"
+      },
+      {
+        "id": "mobile",
+        "title": "Phát triển Mobile App (iOS & Android)",
+        "subtitle": "React Native, Expo, App Store & Google Play Deployment"
+      },
+      {
+        "id": "backend",
+        "title": "Backend, Cloud & Tích hợp Hệ thống",
+        "subtitle": "Node.js, NestJS, PostgreSQL, Prisma, Firebase, Cloudflare R2"
+      }
+    ],
+    "highlightStats": [
+      {
+        "num": "4",
+        "symbol": "+",
+        "label": "Dự án Production hoàn thiện"
+      },
+      {
+        "num": "100",
+        "symbol": "%",
+        "label": "Khách hàng Nhật Bản hài lòng"
+      },
+      {
+        "num": "3",
+        "symbol": "+",
+        "label": "Năm kinh nghiệm thực chiến"
+      }
+    ],
+    "groups": [
+      {
+        "id": "frontend",
+        "title": "Web Frontend",
+        "subtitle": "Giao diện hiện đại, tối ưu SEO & hiệu năng cao",
+        "accent": "sky",
+        "spanClass": "md:col-span-7",
+        "skills": [
+          "React.js",
+          "Next.js",
+          "TypeScript",
+          "JavaScript",
+          "Tailwind CSS",
+          "HTML5",
+          "CSS3 / SCSS",
+          "Angular",
+          "Shopify Liquid"
+        ]
+      },
+      {
+        "id": "mobile",
+        "title": "Mobile Cross-Platform",
+        "subtitle": "Ứng dụng iOS & Android mượt mà trên Store",
+        "accent": "indigo",
+        "spanClass": "md:col-span-5",
+        "skills": [
+          "React Native",
+          "Expo",
+          "iOS App Store Deployment",
+          "Google Play Deployment",
+          "Mobile UI/UX Optimization"
+        ]
+      },
+      {
+        "id": "backend",
+        "title": "Backend & Cơ Sở Dữ Liệu",
+        "subtitle": "Thiết kế API chuẩn xác, bảo mật & tối ưu truy vấn",
+        "accent": "emerald",
+        "spanClass": "md:col-span-6",
+        "skills": [
+          "Node.js",
+          "NestJS",
+          "RESTful API",
+          "GraphQL",
+          "Prisma ORM",
+          "PostgreSQL",
+          "SQL",
+          "Redis"
+        ]
+      },
+      {
+        "id": "cloud",
+        "title": "Dịch Vụ, Cloud & Tích Hợp",
+        "subtitle": "Kết nối cổng thanh toán, lưu trữ, giám sát & DevOps",
+        "accent": "sky",
+        "spanClass": "md:col-span-6",
+        "skills": [
+          "Firebase",
+          "Supabase",
+          "Shopify API & Webhooks",
+          "Cloudflare R2",
+          "Sentry",
+          "Resend",
+          "Twilio Video/Audio",
+          "LINE API",
+          "AWS",
+          "Vercel",
+          "Docker",
+          "Git & CI/CD"
+        ]
+      },
+      {
+        "id": "ai",
+        "title": "AI-Assisted Development Workflow",
+        "subtitle": "Ứng dụng công cụ AI hiện đại vào sinh mã, debug, refactor và nghiên cứu kỹ thuật",
+        "accent": "amber",
+        "spanClass": "md:col-span-12",
+        "skills": [
+          "Claude Code",
+          "GitHub Copilot",
+          "ChatGPT",
+          "AI Code Generation",
+          "Automated Debugging",
+          "Code Refactoring",
+          "Technical Research"
+        ]
+      }
+    ],
+    "softSkillsTitle": "Kỹ Năng Mềm & Tư Duy",
+    "softSkills": [
+      "Tinh thần tự học mạnh mẽ và chủ động khám phá công nghệ mới",
+      "Kỹ năng phân tích và giải quyết vấn đề kỹ thuật hiệu quả",
+      "Làm việc nhóm và phối hợp đa vai trò mượt mà",
+      "Khả năng thích ứng nhanh với yêu cầu dự án và khách hàng quốc tế"
+    ],
+    "languageSkillTitle": "Ngoại Ngữ",
+    "languageSkill": "Tiếng Anh: Đọc hiểu tốt tài liệu kỹ thuật, trao đổi công việc và nghiên cứu giải pháp.",
+    "workStyleEyebrow": "Tư Duy Kỹ Thuật",
+    "workStyleTitle": "Phong Cách & Quy Trình Làm Việc",
+    "workStyleSubtitle": "Chuẩn mực kỹ thuật được rèn luyện qua hơn 3 năm làm việc trực tiếp với khách hàng Nhật Bản:",
+    "workStyleItems": [
+      {
+        "id": "requirement",
+        "title": "Làm rõ Requirement & Chủ động xác nhận",
+        "description": "Đọc kỹ đặc tả trước khi code, chủ động đặt câu hỏi làm rõ các điểm mơ hồ và đề xuất giải pháp phù hợp ngay từ đầu để tránh hiểu sai nghiệp vụ."
+      },
+      {
+        "id": "quality",
+        "title": "Cam kết Chất lượng Code & Sản phẩm tốt nhất",
+        "description": "Viết code sạch (Clean Code), tuân thủ kiến trúc dự án, tối ưu hiệu năng và trải nghiệm người dùng trên cả Web lẫn Mobile."
+      },
+      {
+        "id": "testing",
+        "title": "Tự xây dựng Test Cases & Kiểm thử kỹ lưỡng",
+        "description": "Chủ động liệt kê và kiểm thử đầy đủ các luồng chính, edge cases (trường hợp biên) và tương thích đa thiết bị (iOS/Android/Responsive) trước khi bàn giao."
+      },
+      {
+        "id": "evidence",
+        "title": "Quay Video / Ảnh chụp Evidence rõ ràng",
+        "description": "Mỗi PR/Task hoàn thành đều đính kèm video quay màn hình hoặc hình ảnh chứng minh kết quả (Evidence) chi tiết theo đúng chuẩn làm việc Nhật Bản."
+      },
+      {
+        "id": "responsibility",
+        "title": "Tinh thần Trách nhiệm & Ownership End-to-End",
+        "description": "Theo sát tính năng từ lúc nhận task, phát triển, review cho đến khi chạy ổn định trên Production; luôn chủ động báo cáo tiến độ và hỗ trợ đồng đội."
+      }
+    ]
+  },
+  "projectsSection": {
+    "eyebrow": "Dự Án Thực Chiến",
+    "heading": "Dự án thực chiến",
+    "title": "Sản Phẩm Tiêu Biểu Đang Chạy Production",
+    "description": "Các dự án thực tế được phát triển và phát hành trên Website, Apple App Store và Google Play Store cho thị trường quốc tế và Nhật Bản.",
+    "teamSizeLabel": "Quy mô team",
+    "roleLabel": "Vai trò",
+    "responsibilitiesLabel": "Đóng góp & Trách nhiệm chính",
+    "techStackLabel": "Công nghệ sử dụng",
+    "liveLinksLabel": "Trải nghiệm sản phẩm thực tế",
+    "visitWebsiteBtn": "Truy cập Website",
+    "viewAppStoreBtn": "Xem trên App Store",
+    "viewGithubBtn": "Xem trên GitHub",
+    "websiteBtn": "Website",
+    "appStoreBtn": "App Store",
+    "googlePlayBtn": "Google Play",
+    "items": [
+      {
+        "id": "swipe-drama",
+        "name": "Swipe Drama",
+        "period": "07/2026 - 10/2026",
+        "role": "Fullstack Developer",
+        "teamSize": 10,
+        "highlightBadge": "Short Drama Platform • Web + iOS + Android",
+        "description": "Swipe Drama là ứng dụng xem phim ngắn dạng vuốt dọc kiểu TikTok (TikTok-style short drama app), nơi người dùng lướt xem từng tập phim, khám phá nội dung nổi bật (featured content), làm nhiệm vụ nhận xu (earn coins from tasks) và dùng xu để mở khóa các tập phim cao cấp (unlock premium episodes).",
+        "techCategories": [
+          {
+            "label": "Frontend & Mobile",
+            "items": ["Next.js", "Expo", "TypeScript", "Tailwind CSS"]
+          },
+          {
+            "label": "Backend & Database",
+            "items": ["NestJS", "Node.js", "Prisma", "PostgreSQL", "REST API"]
+          },
+          {
+            "label": "Cloud & Services",
+            "items": [
+              "Vercel",
+              "Firebase",
+              "Cloudflare",
+              "Cloudflare R2",
+              "Bunny CDN",
+              "Sentry",
+              "Google Analytics"
+            ]
+          }
+        ],
+        "responsibilities": [
+          "Sửa lỗi (Fixed bugs) và nâng cao độ ổn định toàn diện cho ứng dụng di động (improved mobile app stability).",
+          "Tái cấu trúc mã nguồn (Refactored code) giúp dễ bảo trì hơn (maintainability) và tối ưu hóa hiệu năng ứng dụng (performance).",
+          "Trực tiếp kiểm thử các tính năng (Tested features) và xử lý triệt để các vấn đề phát sinh (resolved issues).",
+          "Phát triển và bàn giao các tính năng mới (Developed and delivered new features) từ Backend API đến giao diện người dùng.",
+          "Điều tra nguyên nhân và khắc phục các lỗi chuyên biệt trên cả hai hệ điều hành iOS và Android (Investigated and fixed issues on iOS and Android)."
+        ],
+        "links": {
+          "website": "https://swipedrama.com/en/",
+          "appStore": "https://apps.apple.com/us/app/swipedrama-short-drama/id6499208733",
+          "googlePlay": "https://play.google.com/store/apps/details?id=com.swipedrama.shortplus"
+        }
+      },
+      {
+        "id": "digdig",
+        "name": "DigDig — Second-hand Fashion Marketplace",
+        "period": "03/2024 - 07/2026",
+        "role": "Fullstack Developer (End-to-End)",
+        "teamSize": 5,
+        "highlightBadge": "End-to-End Ownership • Japanese Marketplace • Web + iOS + Android",
+        "description": "DigDig là sàn thương mại điện tử thời trang secondhand tại Nhật Bản (second-hand fashion marketplace) kết nối trực tiếp người bán và khách hàng để mua bán quần áo đã qua sử dụng (pre-owned clothing). Trực tiếp nhận task từ khách hàng Nhật và phụ trách phát triển End-to-End từ Web/Shopify, Backend đến Mobile App.",
+        "techCategories": [
+          {
+            "label": "Frontend & Mobile",
+            "items": [
+              "Next.js",
+              "Expo",
+              "TypeScript",
+              "Liquid",
+              "HTML",
+              "CSS",
+              "Tailwind CSS"
+            ]
+          },
+          {
+            "label": "Backend & Database",
+            "items": [
+              "Node.js",
+              "Prisma",
+              "PostgreSQL",
+              "Supabase",
+              "Shopify API"
+            ]
+          },
+          {
+            "label": "Cloud & Integrations",
+            "items": [
+              "Firebase",
+              "LINE API",
+              "Resend",
+              "Cloudflare R2",
+              "Sentry",
+              "Vercel",
+              "Google Analytics"
+            ]
+          }
+        ],
+        "responsibilities": [
+          "Trực tiếp nhận task từ khách hàng Nhật Bản và triển khai tính năng End-to-End từ thiết kế Database/API, tích hợp hệ thống đến hoàn thiện giao diện Web & Mobile.",
+          "Phát triển và tùy biến các cửa hàng thương mại điện tử Shopify (Shopify e-commerce stores) với giao diện chuẩn responsive, thân thiện với người dùng.",
+          "Xây dựng custom Shopify themes và các tính năng cửa hàng chuyên biệt sử dụng Liquid, HTML, CSS và JavaScript.",
+          "Tích hợp Shopify APIs và Webhooks để đồng bộ hóa sản phẩm (product synchronization), cập nhật kho hàng (inventory updates), số lượng tồn kho (stock levels) và giá bán (pricing).",
+          "Phát triển ứng dụng thương mại điện tử di động (mobile e-commerce application) cho cả iOS và Android, hỗ trợ duyệt xem sản phẩm (product browsing), đặt hàng (ordering) và xử lý thanh toán (payment processing)."
+        ],
+        "links": {
+          "website": "https://digdig.jp/",
+          "appStore": "https://apps.apple.com/jp/app/digdig/id6569216718",
+          "googlePlay": "https://play.google.com/store/apps/details?id=app.digdig"
+        }
+      },
+      {
+        "id": "trudi-ai",
+        "name": "Trudi® AI — Property Management Platform",
+        "period": "06/2023 - 03/2024",
+        "role": "Front-end Developer",
+        "teamSize": 100,
+        "highlightBadge": "Enterprise PropTech • Team Size: 100 • AWS & ChatGPT",
+        "description": "Trudi® tích hợp trực tiếp với phần mềm quản lý bất động sản (property management software), giúp doanh nghiệp xử lý toàn bộ các yêu cầu gửi đến từ khách thuê (incoming enquiries) và quản lý công việc (tasks) từ một nền tảng tập trung duy nhất (one centralised platform).",
+        "techCategories": [
+          {
+            "label": "Frontend & Mobile",
+            "items": ["Angular", "React Native"]
+          },
+          {
+            "label": "Backend, Cloud & AI",
+            "items": ["Node.js", "AWS", "ChatGPT", "PostgreSQL"]
+          }
+        ],
+        "responsibilities": [
+          "Thiết kế và phát triển hệ thống Custom UI Components bằng cả React Native và Angular, đảm bảo tính đồng nhất về thiết kế và trải nghiệm trên cả hai nền tảng Mobile và Web.",
+          "Phối hợp chặt chẽ với các lập trình viên Backend trong đội ngũ quy mô 100 thành viên để định nghĩa yêu cầu API (define API requirements) và tích hợp RESTful APIs giúp truyền tải dữ liệu liền mạch.",
+          "Trực tiếp phát triển các tính năng mới (develop features) và xử lý triệt để các lỗi phát sinh (fix bugs) đảm bảo tiến độ dự án."
+        ],
+        "links": {}
+      },
+      {
+        "id": "vri-portal",
+        "name": "VRI Portal — 911 Interpreters",
+        "period": "11/2022 - 06/2023",
+        "role": "Fullstack Developer",
+        "teamSize": 6,
+        "highlightBadge": "Healthcare Interpretation • Twilio Video/Audio • Web & App",
+        "description": "Phần mềm quản lý dịch vụ phiên dịch y tế (Interpretation management software) kết nối trực tiếp giữa bệnh nhân (patients) và phiên dịch viên (interpreters) trong bệnh viện thông qua cuộc gọi Video và Audio thời gian thực ngay trên nền tảng Web hoặc Mobile App.",
+        "techCategories": [
+          {
+            "label": "Frontend & Mobile",
+            "items": ["React", "React Native"]
+          },
+          {
+            "label": "Backend & Real-time Call",
+            "items": ["Node.js", "Twilio", "PostgreSQL"]
+          }
+        ],
+        "responsibilities": [
+          "Phát triển và bảo trì ứng dụng di động sử dụng React Native, đảm bảo khả năng tương thích đa nền tảng (cross-platform compatibility) mượt mà trên cả iOS và Android.",
+          "Thiết kế và xây dựng giao diện người dùng (user interfaces) tối ưu hóa riêng cho các thiết bị di động trong môi trường bệnh viện.",
+          "Xây dựng giao diện và tích hợp luồng đàm thoại cuộc gọi âm thanh và hình ảnh thời gian thực (audio and video call interface) sử dụng nền tảng Twilio."
+        ],
+        "links": {
+          "appStore": "https://apps.apple.com/vn/app/911-interpreters-interpreter/id1373195760?l=vi",
+          "googlePlay": "https://play.google.com/store/apps/details?id=com.interpreter911&hl=vi"
+        }
+      }
+    ]
+  },
+  "experienceSection": {
+    "eyebrow": "Hành Trình Sự Nghiệp",
+    "title": "Kinh Nghiệm Làm Việc & Học Vấn",
+    "description": "Quá trình làm việc thực chiến tại doanh nghiệp phần mềm và nền tảng đào tạo kỹ sư Công nghệ Thông tin.",
+    "workTitle": "Kinh Nghiệm Làm Việc",
+    "educationTitle": "Học Vấn",
+    "experiences": [
+      {
+        "period": "2022 - 2026",
+        "company": "NCCPLUS",
+        "role": "Fullstack Developer",
+        "location": "Việt Nam • Dự án Khách hàng Nhật Bản",
+        "description": "Đảm nhận vai trò tương đương Senior Developer làm việc trực tiếp với khách hàng Nhật Bản — chủ động tiếp nhận task, trao đổi làm rõ yêu cầu (requirements), điều phối tiến độ và phát triển trọn gói các ứng dụng Web & Mobile.",
+        "highlights": [
+          "Trực tiếp nhận task, thảo luận làm rõ yêu cầu nghiệp vụ (requirements) và thống nhất giải pháp kỹ thuật với khách hàng Nhật Bản.",
+          "Điều phối và cập nhật tiến độ công việc hàng ngày, đảm bảo chất lượng bàn giao và cam kết thời gian theo tiêu chuẩn khắt khe của khách Nhật.",
+          "Phát triển End-to-End các ứng dụng Web và Mobile từ ý tưởng đến khi phát hành bằng React, Next.js, React Native (Expo) và Node.js / NestJS."
+        ],
+        "techUsed": [
+          "React",
+          "Next.js",
+          "React Native",
+          "Expo",
+          "Node.js",
+          "NestJS",
+          "TypeScript",
+          "PostgreSQL",
+          "Prisma"
+        ]
+      }
+    ],
+    "education": [
+      {
+        "period": "2018 - 2023",
+        "school": "Trường Đại học Vinh (Vinh University)",
+        "degree": "Kỹ sư Công nghệ Thông tin (Information Technology Engineer)",
+        "gpa": "GPA: 2.8 / 4.0",
+        "description": "Đào tạo chính quy chuyên ngành Kỹ thuật Phần mềm & Hệ thống Thông tin. Nắm vững nền tảng cấu trúc dữ liệu, giải thuật, cơ sở dữ liệu quan hệ, lập trình hướng đối tượng và phát triển ứng dụng Web/Mobile."
+      }
+    ]
+  },
+  "contactSection": {
+    "eyebrow": "Liên hệ",
+    "headingLine1": "Bạn có dự án?",
+    "headingLine2": "Hãy trò chuyện!",
+    "title": "Sẵn Sàng Đồng Hành Cùng Dự Án Của Bạn",
+    "description": "Tôi đang tìm kiếm cơ hội làm việc ở vị trí Fullstack / Web / Mobile Developer. Hãy liên hệ với tôi qua Email hoặc Số điện thoại bên dưới để trao đổi chi tiết hơn!",
+    "formNameLabel": "Họ và tên",
+    "formNamePlaceholder": "Nhập tên của bạn...",
+    "formEmailLabel": "Email",
+    "formEmailPlaceholder": "you@company.com",
+    "formMessageLabel": "Lời nhắn",
+    "formMessagePlaceholder": "Nội dung trao đổi...",
+    "submitBtn": "Gửi liên hệ",
+    "copyBtn": "Sao chép",
+    "copiedBtn": "Đã chép!",
+    "location": "Vinh, Nghệ An",
+    "authorName": "Phạm Huyền Đức",
+    "footerNote": "Thiết kế & Phát triển bởi Phạm Huyền Đức."
+  }
+}

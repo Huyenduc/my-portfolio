@@ -1,0 +1,428 @@
+{
+  "meta": {
+    "title": "Pham Huyen Duc | Fullstack Web & Mobile Developer",
+    "description": "Portfolio of Pham Huyen Duc — Fullstack Developer with 3+ years of experience building Web (React, Next.js) & Mobile (React Native, Expo) applications and scalable Backends (Node.js, NestJS, PostgreSQL)."
+  },
+  "nav": {
+    "name": "Pham Huyen Duc",
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "experience": "Experience",
+    "contact": "Contacts",
+    "downloadCv": "Download CV",
+    "themeLabel": "Theme"
+  },
+  "hero": {
+    "availability": "Available for New Opportunities • Fullstack (Web & Mobile)",
+    "hello": "Hello",
+    "imName": "I'm Huyen Duc",
+    "name": "Pham Huyen Duc",
+    "role": "Fullstack Web & Mobile Developer",
+    "objective": "Full-stack Developer with 3+ years of experience building web and mobile applications. Able to develop applications from idea to production, including frontend, backend, and system integration. Comfortable working in team environments, collaborating directly with Japanese clients, solving technical problems, and mastering new technologies when needed.",
+    "gotProjectCta": "Got a project?",
+    "myResumeCta": "My resume",
+    "location": "Vinh, Nghe An, Vietnam",
+    "dob": "06/01/2000"
+  },
+  "skillsSection": {
+    "eyebrow": "Technical Arsenal",
+    "aboutHeading": "About me",
+    "title": "End-to-End Fullstack Capabilities",
+    "description": "Delivering production-grade web applications, cross-platform mobile apps, and scalable backend services powered by modern AI-assisted workflows.",
+    "services": [
+      {
+        "id": "web",
+        "title": "Website Development",
+        "subtitle": "React.js, Next.js, TypeScript, Tailwind CSS, Shopify Liquid"
+      },
+      {
+        "id": "mobile",
+        "title": "App Development",
+        "subtitle": "React Native, Expo, App Store & Google Play Deployment"
+      },
+      {
+        "id": "backend",
+        "title": "Backend & Cloud Architecture",
+        "subtitle": "Node.js, NestJS, PostgreSQL, Prisma, Firebase, Cloudflare R2"
+      }
+    ],
+    "highlightStats": [
+      {
+        "num": "4",
+        "symbol": "+",
+        "label": "Completed Production Projects"
+      },
+      {
+        "num": "100",
+        "symbol": "%",
+        "label": "Japanese Client Satisfaction"
+      },
+      {
+        "num": "3",
+        "symbol": "+",
+        "label": "Years of experience"
+      }
+    ],
+    "groups": [
+      {
+        "id": "frontend",
+        "title": "Web Frontend",
+        "subtitle": "Responsive, SEO-friendly & high-performance interfaces",
+        "accent": "sky",
+        "spanClass": "md:col-span-7",
+        "skills": [
+          "React.js",
+          "Next.js",
+          "TypeScript",
+          "JavaScript",
+          "Tailwind CSS",
+          "HTML5",
+          "CSS3 / SCSS",
+          "Angular",
+          "Shopify Liquid"
+        ]
+      },
+      {
+        "id": "mobile",
+        "title": "Mobile Cross-Platform",
+        "subtitle": "Production iOS & Android apps published on Stores",
+        "accent": "indigo",
+        "spanClass": "md:col-span-5",
+        "skills": [
+          "React Native",
+          "Expo",
+          "iOS App Store Deployment",
+          "Google Play Deployment",
+          "Mobile Stability & Performance"
+        ]
+      },
+      {
+        "id": "backend",
+        "title": "Backend & Database",
+        "subtitle": "Clean architecture, ORM modeling & API design",
+        "accent": "emerald",
+        "spanClass": "md:col-span-6",
+        "skills": [
+          "Node.js",
+          "NestJS",
+          "RESTful API",
+          "GraphQL",
+          "Prisma ORM",
+          "PostgreSQL",
+          "SQL",
+          "Redis"
+        ]
+      },
+      {
+        "id": "cloud",
+        "title": "Cloud, Services & DevOps",
+        "subtitle": "Third-party integrations, storage, monitoring & CI/CD",
+        "accent": "sky",
+        "spanClass": "md:col-span-6",
+        "skills": [
+          "Firebase",
+          "Supabase",
+          "Shopify API & Webhooks",
+          "Cloudflare R2",
+          "Sentry",
+          "Resend",
+          "Twilio Video/Audio",
+          "LINE API",
+          "AWS",
+          "Vercel",
+          "Docker",
+          "Git & CI/CD"
+        ]
+      },
+      {
+        "id": "ai",
+        "title": "AI-Assisted Engineering Workflow",
+        "subtitle": "Leveraging AI tools for rapid code generation, debugging, refactoring, and technical research",
+        "accent": "amber",
+        "spanClass": "md:col-span-12",
+        "skills": [
+          "Claude Code",
+          "GitHub Copilot",
+          "ChatGPT",
+          "Code Generation",
+          "Debugging",
+          "Code Refactoring",
+          "Technical Research"
+        ]
+      }
+    ],
+    "softSkillsTitle": "Soft Skills & Mindset",
+    "softSkills": [
+      "Strong self-learning mindset and curiosity for new technologies",
+      "Effective analytical and problem-solving skills",
+      "Seamless teamwork and cross-functional collaboration",
+      "High adaptability to international client requirements"
+    ],
+    "languageSkillTitle": "Language Skills",
+    "languageSkill": "English: Able to read and understand technical documentation and collaborate effectively.",
+    "workStyleEyebrow": "Engineering Mindset",
+    "workStyleTitle": "Working Style & Engineering Standards",
+    "workStyleSubtitle": "Disciplined workflow honed through 3+ years of working directly with Japanese clients:",
+    "workStyleItems": [
+      {
+        "id": "requirement",
+        "title": "Clear Requirements & Proactive Communication",
+        "description": "Thoroughly analyze specifications, proactively ask clarifying questions when needed, and align on technical edge cases before writing code."
+      },
+      {
+        "id": "quality",
+        "title": "Commitment to Highest Quality",
+        "description": "Deliver clean, maintainable, and type-safe code with high attention to UI/UX polish and performance across Web and Mobile platforms."
+      },
+      {
+        "id": "testing",
+        "title": "Comprehensive Test Cases & Self-Testing",
+        "description": "Carefully design and execute test cases covering happy paths, edge cases, and cross-platform behavior (iOS, Android & Responsive Web) prior to handover."
+      },
+      {
+        "id": "evidence",
+        "title": "Visual Evidence (Screen Recordings & Screenshots)",
+        "description": "Attach clear video recordings and screenshot evidence to every task/PR to demonstrate verified behavior and speed up client/QA review."
+      },
+      {
+        "id": "responsibility",
+        "title": "High Accountability & End-to-End Ownership",
+        "description": "Take full responsibility for assigned tasks from development to production deployment, ensuring transparent progress updates and timely delivery."
+      }
+    ]
+  },
+  "projectsSection": {
+    "eyebrow": "Production Portfolio",
+    "heading": "Projects",
+    "title": "Featured Projects Live in Production",
+    "description": "Real-world applications developed and shipped to Web, Apple App Store, and Google Play Store.",
+    "teamSizeLabel": "Team size",
+    "roleLabel": "Role",
+    "responsibilitiesLabel": "Key Responsibilities & Impact",
+    "techStackLabel": "Tech Stack",
+    "liveLinksLabel": "Live Production Links",
+    "visitWebsiteBtn": "Visit Website",
+    "viewAppStoreBtn": "View on App Store",
+    "viewGithubBtn": "View GitHub",
+    "websiteBtn": "Website",
+    "appStoreBtn": "App Store",
+    "googlePlayBtn": "Google Play",
+    "items": [
+      {
+        "id": "swipe-drama",
+        "name": "Swipe Drama",
+        "period": "07/2026 - 10/2026",
+        "role": "Fullstack Developer",
+        "teamSize": 10,
+        "highlightBadge": "Short Drama Platform • Web + iOS + Android",
+        "description": "Swipe Drama is a TikTok-style short drama app where users can swipe through episodes, discover featured content, earn coins from tasks, and use them to unlock premium episodes.",
+        "techCategories": [
+          {
+            "label": "Frontend & Mobile",
+            "items": ["Next.js", "Expo", "TypeScript", "Tailwind CSS"]
+          },
+          {
+            "label": "Backend & Database",
+            "items": ["NestJS", "Node.js", "Prisma", "PostgreSQL", "REST API"]
+          },
+          {
+            "label": "Cloud & Services",
+            "items": [
+              "Vercel",
+              "Firebase",
+              "Cloudflare",
+              "Cloudflare R2",
+              "Bunny CDN",
+              "Sentry",
+              "Google Analytics"
+            ]
+          }
+        ],
+        "responsibilities": [
+          "Fixed bugs and improved mobile app stability across production releases.",
+          "Refactored code for better maintainability and smoother video streaming performance.",
+          "Tested features and resolved technical & functional issues.",
+          "Developed and delivered new features across mobile and web/backend.",
+          "Investigated and fixed platform-specific issues on both iOS and Android."
+        ],
+        "links": {
+          "website": "https://swipedrama.com/en/",
+          "appStore": "https://apps.apple.com/us/app/swipedrama-short-drama/id6499208733",
+          "googlePlay": "https://play.google.com/store/apps/details?id=com.swipedrama.shortplus"
+        }
+      },
+      {
+        "id": "digdig",
+        "name": "DigDig — Second-hand Fashion Marketplace",
+        "period": "03/2024 - 07/2026",
+        "role": "Fullstack Developer (End-to-End)",
+        "teamSize": 5,
+        "highlightBadge": "End-to-End Ownership • Japanese Marketplace • Web + iOS + Android",
+        "description": "DigDig is a second-hand fashion marketplace connecting sellers and customers to buy and sell pre-owned clothing. Directly received tasks from Japanese clients and owned features end-to-end across Web/Shopify, Backend APIs, and Mobile Apps.",
+        "techCategories": [
+          {
+            "label": "Frontend & Mobile",
+            "items": [
+              "Next.js",
+              "Expo",
+              "TypeScript",
+              "Liquid",
+              "HTML",
+              "CSS",
+              "Tailwind CSS"
+            ]
+          },
+          {
+            "label": "Backend & Database",
+            "items": [
+              "Node.js",
+              "Prisma",
+              "PostgreSQL",
+              "Supabase",
+              "Shopify API"
+            ]
+          },
+          {
+            "label": "Cloud & Integrations",
+            "items": [
+              "Firebase",
+              "LINE API",
+              "Resend",
+              "Cloudflare R2",
+              "Sentry",
+              "Vercel",
+              "Google Analytics"
+            ]
+          }
+        ],
+        "responsibilities": [
+          "Received tasks directly from Japanese clients and delivered features end-to-end — from requirement clarification and DB/API design to web storefront and mobile app releases.",
+          "Developed and customized Shopify e-commerce stores with responsive, user-friendly interfaces.",
+          "Built custom Shopify themes and features using Liquid, HTML, CSS, and JavaScript.",
+          "Integrated Shopify APIs and webhooks for product synchronization, inventory updates, stock levels, and pricing.",
+          "Developed a mobile e-commerce application for iOS and Android, supporting product browsing, ordering, and payment processing."
+        ],
+        "links": {
+          "website": "https://digdig.jp/",
+          "appStore": "https://apps.apple.com/jp/app/digdig/id6569216718",
+          "googlePlay": "https://play.google.com/store/apps/details?id=app.digdig"
+        }
+      },
+      {
+        "id": "trudi-ai",
+        "name": "Trudi® AI — Property Management Platform",
+        "period": "06/2023 - 03/2024",
+        "role": "Front-end Developer",
+        "teamSize": 100,
+        "highlightBadge": "Enterprise PropTech • Team Size: 100 • AWS & ChatGPT",
+        "description": "Trudi® integrates with your property management software, so you can handle all incoming enquiries and tasks from one centralised platform.",
+        "techCategories": [
+          {
+            "label": "Frontend & Mobile",
+            "items": ["Angular", "React Native"]
+          },
+          {
+            "label": "Backend, Cloud & AI",
+            "items": ["Node.js", "AWS", "ChatGPT", "PostgreSQL"]
+          }
+        ],
+        "responsibilities": [
+          "Designed and developed custom UI components in React Native and Angular, ensuring consistent design across mobile and web.",
+          "Collaborated with backend developers in a 100-member team to define API requirements and integrate RESTful APIs for seamless data communication.",
+          "Fixed bugs and developed new features across web and mobile applications."
+        ],
+        "links": {}
+      },
+      {
+        "id": "vri-portal",
+        "name": "VRI Portal — 911 Interpreters",
+        "period": "11/2022 - 06/2023",
+        "role": "Fullstack Developer",
+        "teamSize": 6,
+        "highlightBadge": "Healthcare Interpretation • Twilio Video/Audio • Web & App",
+        "description": "Interpretation management software between patients and interpreters in the hospital through video and audio calls on the web or mobile app.",
+        "techCategories": [
+          {
+            "label": "Frontend & Mobile",
+            "items": ["React", "React Native"]
+          },
+          {
+            "label": "Backend & Real-time Call",
+            "items": ["Node.js", "Twilio", "PostgreSQL"]
+          }
+        ],
+        "responsibilities": [
+          "Developed and maintained the mobile application using React Native, ensuring cross-platform compatibility for both iOS and Android.",
+          "Created intuitive user interfaces tailored for mobile devices in hospital environments.",
+          "Created real-time audio and video call interfaces using Twilio."
+        ],
+        "links": {
+          "appStore": "https://apps.apple.com/vn/app/911-interpreters-interpreter/id1373195760?l=vi",
+          "googlePlay": "https://play.google.com/store/apps/details?id=com.interpreter911&hl=vi"
+        }
+      }
+    ]
+  },
+  "experienceSection": {
+    "eyebrow": "Career Journey",
+    "title": "Work Experience & Education",
+    "description": "Professional track record delivering software for Japanese clients and academic background in Information Technology.",
+    "workTitle": "Work Experience",
+    "educationTitle": "Education",
+    "experiences": [
+      {
+        "period": "2022 - 2026",
+        "company": "NCCPLUS",
+        "role": "Fullstack Developer",
+        "location": "Vietnam • Japanese Client Accounts",
+        "description": "Worked in a Senior Developer shadowing role for Japanese client accounts, delivering full-stack web and mobile solutions.",
+        "highlights": [
+          "Directly received tasks, discussed technical & business requirements, and coordinated task progress with Japanese clients.",
+          "Developed production web and mobile applications end-to-end using React, React Native, Node.js, and Next.js.",
+          "Maintained high code quality, system stability, and on-time delivery across multiple client projects."
+        ],
+        "techUsed": [
+          "React",
+          "Next.js",
+          "React Native",
+          "Expo",
+          "Node.js",
+          "NestJS",
+          "TypeScript",
+          "PostgreSQL",
+          "Prisma"
+        ]
+      }
+    ],
+    "education": [
+      {
+        "period": "2018 - 2023",
+        "school": "Vinh University",
+        "degree": "Information Technology Engineer",
+        "gpa": "GPA: 2.8 / 4.0",
+        "description": "5-year Engineering degree in Information Technology, focusing on software engineering, data structures, relational databases, and web/mobile application development."
+      }
+    ]
+  },
+  "contactSection": {
+    "eyebrow": "Contacts",
+    "headingLine1": "Have a project?",
+    "headingLine2": "Let's talk!",
+    "title": "Let's Build Something Great Together",
+    "description": "I am currently open to Fullstack / Web / Mobile Developer roles. Feel free to reach out via email or phone below!",
+    "formNameLabel": "Name",
+    "formNamePlaceholder": "Your name...",
+    "formEmailLabel": "Email",
+    "formEmailPlaceholder": "you@company.com",
+    "formMessageLabel": "Message",
+    "formMessagePlaceholder": "Tell me about your project or role...",
+    "submitBtn": "Submit",
+    "copyBtn": "Copy",
+    "copiedBtn": "Copied!",
+    "location": "Vinh, Nghe An",
+    "authorName": "Pham Huyen Duc",
+    "footerNote": "Designed & Built by Pham Huyen Duc"
+  }
+}
