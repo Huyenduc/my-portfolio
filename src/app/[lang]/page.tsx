@@ -49,7 +49,7 @@ export async function generateMetadata({
       locale: locale === "vn" ? "vi_VN" : "en_US",
       images: [
         {
-          url: "/og-image.png",
+          url: "/og-image.webp",
           width: 1200,
           height: 630,
           alt: title,
@@ -60,7 +60,7 @@ export async function generateMetadata({
       card: "summary_large_image",
       title,
       description,
-      images: ["/og-image.png"],
+      images: ["/og-image.webp"],
     },
   };
 }
