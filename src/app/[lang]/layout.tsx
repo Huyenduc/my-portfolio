@@ -1,6 +1,5 @@
 import { notFound } from "next/navigation";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
-import { Suspense } from "react";
 import { routing } from "@/i18n/routing";
 import enMessages from "../../../messages/en.json";
 import vnMessages from "../../../messages/vn.json";
@@ -10,11 +9,13 @@ const messagesMap = {
   en: enMessages,
 } as const;
 
+export const instant = false;
+
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ lang: locale }));
 }
 
-async function LocaleProvider({
+export default async function LocaleLayout({
   children,
   params,
 }: {
@@ -35,19 +36,5 @@ async function LocaleProvider({
         {children}
       </div>
     </NextIntlClientProvider>
-  );
-}
-
-export default function LocaleLayout({
-  children,
-  params,
-}: {
-  children: React.ReactNode;
-  params: Promise<{ lang: string }>;
-}) {
-  return (
-    <Suspense fallback={<div className="min-h-screen bg-background" />}>
-      <LocaleProvider params={params}>{children}</LocaleProvider>
-    </Suspense>
   );
 }

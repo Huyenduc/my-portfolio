@@ -31,6 +31,11 @@ export function Navbar() {
     setMobileMenuOpen(false);
   }, []);
 
+  const handleLogoClick = useCallback(() => {
+    setMobileMenuOpen(false);
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
+
   return (
     <header className="fixed top-0 left-0 right-0 z-50 w-full border-b border-border/50 bg-background/85 backdrop-blur-md">
       <Container>
@@ -38,6 +43,7 @@ export function Navbar() {
           {/* Clean Brand Name matching reference */}
           <Link
             href="/"
+            onClick={handleLogoClick}
             className="text-lg sm:text-xl font-bold tracking-tight text-foreground hover:text-primary transition-colors"
           >
             {t("name")}

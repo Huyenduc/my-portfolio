@@ -17,6 +17,7 @@ export function LanguageSwitcher() {
       <Link
         href={pathname}
         locale="vn"
+        scroll={false}
         className={cn(
           "rounded-xs px-2.5 py-1 font-semibold transition-all",
           currentLang === "vn"
@@ -29,6 +30,7 @@ export function LanguageSwitcher() {
       <Link
         href={pathname}
         locale="en"
+        scroll={false}
         className={cn(
           "rounded-xs px-2.5 py-1 font-semibold transition-all",
           currentLang === "en"
