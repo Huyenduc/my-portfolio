@@ -1,13 +1,28 @@
 "use client";
 
+import { useRouter as useNextRouter } from "next/navigation";
 import { useLocale } from "next-intl";
+import { useEffect } from "react";
 import { Link, usePathname } from "@/i18n/navigation";
-import type { Locale } from "@/i18n/routing";
+import { type Locale, routing } from "@/i18n/routing";
 import { cn } from "@/lib/utils";
 
 export function LanguageSwitcher() {
   const currentLang = useLocale() as Locale;
   const pathname = usePathname();
+  const nextRouter = useNextRouter();
+
+  // Prefetch alternate locale routes in the background after initial load
+  // because next-intl's <Link locale={...}> forces prefetch={false}.
+  useEffect(() => {
+    for (const locale of routing.locales) {
+      if (locale !== currentLang) {
+        const target =
+          pathname === "/" ? `/${locale}` : `/${locale}${pathname}`;
+        nextRouter.prefetch(target);
+      }
+    }
+  }, [currentLang, pathname, nextRouter]);
 
   return (
     <fieldset

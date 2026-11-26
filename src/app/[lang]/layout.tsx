@@ -9,8 +9,6 @@ const messagesMap = {
   en: enMessages,
 } as const;
 
-export const instant = false;
-
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ lang: locale }));
 }

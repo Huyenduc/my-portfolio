@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
-import { connection } from "next/server";
 import { hasLocale } from "next-intl";
 import { getTranslations } from "next-intl/server";
-import { Suspense } from "react";
 import { Navbar } from "@/components/layout/navbar";
 import { ContactSection } from "@/components/sections/contact-section";
 import { ExperienceSection } from "@/components/sections/experience-section";
@@ -65,11 +63,6 @@ export async function generateMetadata({
   };
 }
 
-async function Connection() {
-  await connection();
-  return null;
-}
-
 export default function PortfolioLocalePage() {
   return (
     <>
@@ -81,9 +74,6 @@ export default function PortfolioLocalePage() {
         <ExperienceSection />
         <ContactSection />
       </main>
-      <Suspense>
-        <Connection />
-      </Suspense>
     </>
   );
 }
