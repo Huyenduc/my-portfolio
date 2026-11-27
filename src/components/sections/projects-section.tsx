@@ -11,12 +11,13 @@ import {
   Users,
 } from "lucide-react";
 import { useTranslations } from "next-intl";
-import { useMemo } from "react";
+import { type MouseEvent, useCallback, useMemo } from "react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Reveal } from "@/components/ui/reveal";
 import { Container, Section } from "@/components/ui/section";
 import type { ProjectItem } from "@/interfaces/portfolio";
+import { trackEvent } from "@/lib/analytics";
 
 function ProjectPreviewWindow({ project }: { project: ProjectItem }) {
   switch (project.id) {
@@ -170,6 +171,19 @@ export function ProjectsSection() {
   const t = useTranslations("projectsSection");
   const items = useMemo(() => t.raw("items") as ProjectItem[], [t]);
 
+  const handleProjectLinkClick = useCallback(
+    (event: MouseEvent<HTMLAnchorElement>) => {
+      const { projectId, projectName, linkType } = event.currentTarget.dataset;
+      if (!projectId) return;
+      trackEvent("project_click", {
+        project_id: projectId,
+        project_name: projectName ?? projectId,
+        link_type: linkType ?? "website",
+      });
+    },
+    [],
+  );
+
   return (
     <Section id="projects">
       <Container>
@@ -309,6 +323,10 @@ export function ProjectsSection() {
                             href={project.links.website}
                             target="_blank"
                             rel="noopener noreferrer"
+                            data-project-id={project.id}
+                            data-project-name={project.name}
+                            data-link-type="website"
+                            onClick={handleProjectLinkClick}
                           >
                             {t("visitWebsiteBtn")}
                           </a>
@@ -324,6 +342,10 @@ export function ProjectsSection() {
                               href={project.links.appStore}
                               target="_blank"
                               rel="noopener noreferrer"
+                              data-project-id={project.id}
+                              data-project-name={project.name}
+                              data-link-type="app_store"
+                              onClick={handleProjectLinkClick}
                             >
                               {t("viewAppStoreBtn")}
                             </a>
@@ -336,6 +358,10 @@ export function ProjectsSection() {
                           href={project.links.appStore}
                           target="_blank"
                           rel="noopener noreferrer"
+                          data-project-id={project.id}
+                          data-project-name={project.name}
+                          data-link-type="app_store"
+                          onClick={handleProjectLinkClick}
                           className="group/link inline-flex items-center gap-1.5 text-sm font-semibold text-foreground underline underline-offset-8 decoration-primary/70 hover:text-primary transition-colors"
                         >
                           <Smartphone className="size-4 text-primary" />
@@ -349,6 +375,10 @@ export function ProjectsSection() {
                           href={project.links.googlePlay}
                           target="_blank"
                           rel="noopener noreferrer"
+                          data-project-id={project.id}
+                          data-project-name={project.name}
+                          data-link-type="google_play"
+                          onClick={handleProjectLinkClick}
                           className="group/link inline-flex items-center gap-1.5 text-sm font-semibold text-foreground underline underline-offset-8 decoration-primary/70 hover:text-primary transition-colors"
                         >
                           <Play className="size-3.5 text-primary" />

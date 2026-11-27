@@ -2,9 +2,11 @@
 
 import Image from "next/image";
 import { useTranslations } from "next-intl";
+import { useCallback } from "react";
 import { Button } from "@/components/ui/button";
 import { Reveal } from "@/components/ui/reveal";
 import { Container } from "@/components/ui/section";
+import { trackEvent } from "@/lib/analytics";
 
 const techStripItems = [
   "HTML5",
@@ -19,6 +21,12 @@ const techStripItems = [
 
 export function HeroSection() {
   const t = useTranslations("hero");
+
+  const handleResumeClick = useCallback(() => {
+    trackEvent("download_cv", {
+      file_name: "Pham-Huyen-Duc-CV.pdf",
+    });
+  }, []);
 
   return (
     <section id="home" className="relative overflow-hidden pt-6 sm:pt-12">
@@ -71,6 +79,7 @@ export function HeroSection() {
                   <a
                     href="/Pham-Huyen-Duc-CV.pdf"
                     download="Pham-Huyen-Duc-CV.pdf"
+                    onClick={handleResumeClick}
                   >
                     {t("myResumeCta")}
                   </a>
