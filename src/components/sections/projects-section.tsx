@@ -6,6 +6,7 @@ import {
   Calendar,
   CheckCircle2,
   Layers,
+  Link as LinkIcon,
   Play,
   Smartphone,
   Users,
@@ -216,7 +217,8 @@ export function ProjectsSection() {
             return (
               <div
                 key={project.id}
-                className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-start"
+                id={project.id}
+                className="scroll-mt-24 grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-start"
               >
                 {/* Project Info Column */}
                 <Reveal
@@ -238,7 +240,16 @@ export function ProjectsSection() {
                   {/* Title & Metadata Bar (Role, Period, Team Size) */}
                   <div className="space-y-2 text-center lg:text-left">
                     <h3 className="text-2xl sm:text-3xl font-bold text-foreground">
-                      {project.name}
+                      <a
+                        href={`#${project.id}`}
+                        className="group/anchor hover:text-primary transition-colors"
+                      >
+                        {project.name}
+                        <LinkIcon
+                          aria-hidden="true"
+                          className="inline-block align-middle ml-2 size-4 text-muted-foreground opacity-0 group-hover/anchor:opacity-100 group-hover/anchor:text-primary transition-all duration-150"
+                        />
+                      </a>
                     </h3>
 
                     <div className="flex flex-wrap items-center justify-center lg:justify-start gap-x-5 gap-y-2 text-xs sm:text-sm font-mono text-muted-foreground">
