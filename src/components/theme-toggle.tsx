@@ -4,12 +4,15 @@ import { Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
 import { useCallback } from "react";
 import { Button } from "@/components/ui/button";
+import { trackEvent } from "@/lib/analytics";
 
 export function ThemeToggle() {
   const { resolvedTheme, setTheme } = useTheme();
 
   const handleToggle = useCallback(() => {
-    setTheme(resolvedTheme === "dark" ? "light" : "dark");
+    const nextTheme = resolvedTheme === "dark" ? "light" : "dark";
+    setTheme(nextTheme);
+    trackEvent("theme_switch", { theme: nextTheme });
   }, [resolvedTheme, setTheme]);
 
   return (

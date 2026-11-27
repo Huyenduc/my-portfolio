@@ -5,6 +5,7 @@ import { useLocale } from "next-intl";
 import { type MouseEvent, useCallback } from "react";
 import { usePathname } from "@/i18n/navigation";
 import { type Locale, routing } from "@/i18n/routing";
+import { trackEvent } from "@/lib/analytics";
 import { cn } from "@/lib/utils";
 
 export function LanguageSwitcher() {
@@ -19,6 +20,10 @@ export function LanguageSwitcher() {
       if (!nextLocale || nextLocale === currentLang) return;
       // biome-ignore lint/suspicious/noDocumentCookie: synchronous cookie update for next-intl soft navigation
       document.cookie = `NEXT_LOCALE=${nextLocale}; path=/; max-age=31536000; SameSite=Lax`;
+      trackEvent("language_switch", {
+        from_locale: currentLang,
+        to_locale: nextLocale,
+      });
     },
     [currentLang],
   );
